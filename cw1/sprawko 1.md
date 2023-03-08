@@ -2,7 +2,7 @@
 Składamy płytkę zgodnie z instrukcją
 
 ## Pierwsze uruchomienie
-**na host-cie** do terminala UART j
+**na host-cie** do terminala UART
 `tio /dev/ttyUSB0`
 
 podłączamy zasilanie do płytki
@@ -53,7 +53,7 @@ za pomocą wget do /root
 
 mountujemy
 `mount /dev/mmcblk0p1 /mnt`
-pojawia się błąd z fsck
+pojawia się błąd z fsck mimo którego montowanie działa
 
 przenosimy pliki pliki cmdline.txt, bcm2711-rpi-4-b.dtb, Image, do /mnt/usr
 Image -> Kernel8.img
@@ -61,7 +61,7 @@ Image -> Kernel8.img
 `reboot` 
 przytrzymując SW4
 
-uruchomił się system z ramdysku, na którym nie zostały zachowane pliki po ponownym uruchomieniu pliii nie zostały zachowane
+uruchomił się system z ramdysku, na którym nie zostały zachowane pliki po ponownym uruchomieniu
 
 
 ## Obraz bez initramfs
@@ -94,7 +94,7 @@ nagrywamy system plików
 
 mountujemy
 `mount /dev/mmcblk0p1 /mnt`
-pojawia się błąd z fsck
+pojawia się błąd z fsck mimo którego działa
 
 przenosimy pliki pliki cmdline.txt, bcm2711-rpi-4-b.dtb, Image, do /mnt/usr
 Image -> Kernel8.img

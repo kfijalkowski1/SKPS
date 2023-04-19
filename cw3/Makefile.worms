@@ -41,7 +41,7 @@ define Build/Compile
 	$(TARGET_CC) $(TARGET_LDFLAGS) -o $(PKG_BUILD_DIR)/worms $(PKG_BUILD_DIR)/worms.o $(PKG_BUILD_DIR)/main.o $(PKG_BUILD_DIR)/helper.o -lncurses
 endef
 
-# Package install instructions; create a directory inside the package to hold our executable, and then copy the executable we built previously into the folder
+# Package install instructions; create a directory inside the package to hold our executable, and then copy the executable we built previously into the folder 
 define Package/$(PKG_NAME)/install
 	$(INSTALL_DIR) $(1)/usr/bin
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/worms $(1)/usr/bin

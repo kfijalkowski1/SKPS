@@ -26,7 +26,7 @@ def make_histogram(path):
     plt.show()
 
 
-paths = ["logs/zad4_1.log", "logs/zad4_2.log", "logs/zad4_3.log", "logs/zad4_4.log"]
+paths = ["src/zad5_1.log", "src/zad5_2.log"]
 
 for path in paths:
     make_histogram(path)

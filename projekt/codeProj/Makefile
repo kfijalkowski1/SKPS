@@ -26,16 +26,7 @@ define Package/$(PKG_NAME)/description
   Contains executables needed for Raspberry Pi in order to take lidar measurements and send the data to PC (host).
 endef
 
-# Package preparation instructions; create the build directory and copy the source code.
-# The last command is necessary to ensure our preparation instructions remain compatible with the patching system.
-#define Build/Prepare
-#	mkdir -p $(PKG_BUILD_DIR)
-#	cp $(SOURCE_DIR)/* $(PKG_BUILD_DIR)
-#	$(Build/Patch)
-#endef
 
-define Build/Configure
-endef
 
 # Package build instructions; invoke the target-specific compiler to first compile the source file, and then to link the file into the final executable
 define Build/Compile
